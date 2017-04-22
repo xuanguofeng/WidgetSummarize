@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.xuanguofeng.widgetsummarize.TextInputLayoutShowActivity"
+
+    >
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mobile"
+        android:padding="20dp"
+        android:textColorHint="#ffffff"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/error_text_style"
+        app:counterMaxLength="11"
+
+        app:counterTextAppearance="@style/text_style">
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textSize="13sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:padding="20dp"
+        android:textColorHint="#ffffff"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent"
+        app:counterTextAppearance="@style/text_style">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLines="1"
+            android:textSize="13sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+</RelativeLayout>
